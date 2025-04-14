@@ -1,21 +1,24 @@
 # **paperplane**
-> 당신의 아이디어를 날려보세요 🚀  
+
+![paperplane 소개](https://github.com/user-attachments/assets/aa284791-1415-49af-88e9-3115d7e648b4)
+
+> 대학생들을 위한 아이디어 공유 서비스, paperplane
 
 ---
+
+
 
 ## 목차
 
 - [프로젝트 개요](#프로젝트-개요)
 - [프로젝트 설명](#프로젝트-설명)
   1. [Backend Tech](#1-backend-tech)
-  2. [Database ERD](#2-database-erd)
-  3. [Architecture](#3-architecture)
+  2. [Architecture](#2-architecture)
 - [기능 설명](#기능-설명)
   1. [아이디어 작성 및 관리](#1-아이디어-작성-및-관리)
-  2. [아이디어 검색](#2-아이디어-검색)
-  3. [구매/판매](#3-구매판매)
-  4. [다운로드](#4-다운로드)
-- [Backend Developers](#backend-developers)
+  2. [구매/판매](#2-구매판매)
+  3. [다운로드](#3-다운로드)
+- [기여](#기여)
 
 ---
 
@@ -48,16 +51,10 @@
 
 ---
 
-### 2. Database ERD
+### 2. Architecture
 
-
-
----
-
-### 3. Architecture
 ![paperplane_BE_architecture drawio](https://github.com/user-attachments/assets/5cc6a844-81db-4b59-88c3-ebe24beb143e)
 
-*아키텍처 이미지를 프로젝트 디렉토리에 추가한 후 위 경로를 수정하세요.*
 
 ---
 
@@ -65,25 +62,41 @@
 
 ### 1. 아이디어 작성 및 관리
 
+![paperplane-1](https://github.com/user-attachments/assets/827e9544-fb3c-43ec-ae6e-fe91cbcab14b)
+
 - **아이디어 작성**: 제목, 카테고리, 설명, 태그, 가격을 입력하고 파일을 첨부하여 아이디어 작성
 - **아이디어 수정**: 기존 아이디어 내용을 수정 가능
 - **아이디어 삭제**: 본인이 작성한 아이디어를 삭제 가능
+- **아이디어 검색**: 키워드, 카테고리, 태그를 기반으로 아이디어를 검색 가능
 
-### 2. 아이디어 검색
 
-- 키워드, 카테고리, 태그를 기반으로 아이디어를 검색 가능
+### 2. 구매/판매
 
-### 3. 구매/판매
+![paperplane - 3](https://github.com/user-attachments/assets/02845a5a-412e-4c05-907e-9ff61dc77277)
+
 
 - 아이디어를 다른 사용자와 거래
 - 구매 내역 및 판매 내역 확인 가능
+- 판매자에게 문의하기 기능 
 
-### 4. 다운로드
+### 3. 다운로드
+
+![paperplane - 2](https://github.com/user-attachments/assets/4d55dc71-23f8-41ce-932c-625d096acfa5)
 
 - 구매한 아이디어의 파일을 다운로드 가능
 - 유저 권한 기반 파일 접근 제한
-
+- 다운로드 후 후기 작성 기능
 ---
 
-## [Backend Developers]
+## 기여
 
+- **아이디어 기능 구현**
+    - 제목, 카테고리, 설명, 태그, 가격, 파일 첨부 포함 전체 작성/수정/삭제 기능 구현
+- **검색 기능 구현**
+    - 키워드, 카테고리, 태그 기반 필터링 로직 설계 및 개발
+- **거래 시스템 개발**
+    - 사용자 간 아이디어 구매/판매, 거래 내역 관리 기능 설계 및 구현
+- **다운로드 기능 개발**
+    - AWS S3 기반의 파일 업로드 및 다운로드 시스템 구축, 권한별 접근 제어 적용
+- **CI/CD 파이프라인 설계 및 무중단 배포 적용**
+    - AWS EC2, Docker Compose, Github actions, Nginx를 이용한 CI/CD 프로세스 자동화 및 Blue-Green 전략을 통한 무중단 배포 도입
